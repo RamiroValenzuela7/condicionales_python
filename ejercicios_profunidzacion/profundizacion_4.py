@@ -33,3 +33,46 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+#Carga por teclado de las palabras.
+palabra_1 = str(input("Ingrese la primer palabra: "))
+palabra_2 = str(input("Ingrese la segunda palabra: "))
+palabra_3 = str(input("Ingrese la tercer palabra: "))
+
+#Decisión de ordenamiento.
+orden = int(input('Presione "1" si desea ordenar de forma alfabeticamente o presione "2" si desea ordenar por longitud de la palabra: '))
+
+#Orden alfabetido.
+if (orden == 1):
+    if (palabra_1 < palabra_2 and palabra_2 < palabra_3):
+         print(F"El orden alfabetico es: {palabra_1}, {palabra_2} y {palabra_3}")
+    elif (palabra_1 < palabra_3 and palabra_3 < palabra_2):
+        print(F"El orden alfabetico es: {palabra_1}, {palabra_3} y {palabra_2}")
+
+    if (palabra_2 < palabra_1 and palabra_1 < palabra_3):
+        print(F"El orden alfabetico es: {palabra_2}, {palabra_1} y {palabra_3}")
+    elif (palabra_2 < palabra_3 and palabra_3 < palabra_1):
+        print(F"El orden alfabetico es: {palabra_2}, {palabra_3} y {palabra_1}")
+
+    if (palabra_3 < palabra_2 and palabra_2 < palabra_1):
+        print(F"El orden alfabetico es: {palabra_3}, {palabra_2} y {palabra_1}")
+    elif (palabra_3 < palabra_1 and palabra_1 < palabra_2):
+        print(F"El orden alfabetico es: {palabra_3}, {palabra_1} y {palabra_2}")
+
+
+#Orden por cantidad de letras.
+elif (orden == 2):
+    if (len(palabra_1) > len(palabra_2) and len(palabra_2) > len(palabra_3)):
+         print(F"El orden de mayor a menor es: {palabra_1}, {palabra_2} y {palabra_3}")
+    elif (len(palabra_1) > len(palabra_3) and len(palabra_3) > len(palabra_2)):
+        print(F"El orden de mayor a menor es: {palabra_1}, {palabra_3} y {palabra_2}")
+
+    if (len(palabra_2) > len(palabra_1) and len(palabra_1) > len(palabra_3)):
+        print(F"El orden de mayor a menor es: {palabra_2}, {palabra_1} y {palabra_3}")
+    elif (len(palabra_2) > len(palabra_3) and len(palabra_3) > len(palabra_1)):
+        print(F"El orden de mayor a menor es: {palabra_2}, {palabra_3} y {palabra_1}")
+
+    if (len(palabra_3) > len(palabra_2) and len(palabra_2) > len(palabra_1)):
+        print(F"El orden de mayor a menor es: {palabra_3}, {palabra_2} y {palabra_1}")
+    elif (len(palabra_3) > len(palabra_1) and len(palabra_1) > len(palabra_2)):
+        print(F"El orden de mayor a menor es: {palabra_3}, {palabra_1} y {palabra_2}")

@@ -22,3 +22,18 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+#Carga por teclado de numeros enteros.
+numero_1 = int(input("Ingrese el primer numero entero: "))
+numero_2 = int(input("Ingrese el segundo numero entero: "))
+
+#Calculo de diferencia entre los numeros.
+resta = numero_1 - numero_2
+
+#Muestra por pantalla del resultado.
+if (resta > 0):
+    print(F'El resultado entre {numero_1} y {numero_2} es "POSITIVO"')
+elif (resta == 0):
+    print(F'El resultado entre {numero_1} y {numero_2} es "0" ')
+else:
+    print(F'El resultado entre {numero_1} y {numero_2} es "NEGATIVO"')

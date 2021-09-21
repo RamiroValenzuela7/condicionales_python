@@ -30,3 +30,16 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+#Carga por teclado de temperaturas.
+temp_1 = int(input("Ingrese la primer temperatura: "))
+temp_2 = int(input("Ingrese la segunda temperatura: "))
+temp_3 = int(input("Ingrese la tercer temperatura: "))
+
+#Calularcual de ellas es la maxima, minima y promedio.
+if (temp_2 < temp_1 > temp_3):
+    print("La primer temperatura es la mayor")
+elif (temp_1 < temp_2 > temp_3):
+    print("La segunda temperatura es la mayor")
+else:
+    print("La tercer temperatura es la mayor")
